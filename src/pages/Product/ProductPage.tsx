@@ -9,7 +9,7 @@ import Breadcrumb from "./../../components/Product/Breadcrumb";
 function ProductPage() {
   const { id } = useParams();
 
-  const { isPending, error, data } = useQuery({
+  const { isPending, data } = useQuery({
     queryKey: ["product", id],
     queryFn: fetchProductDetails
   });

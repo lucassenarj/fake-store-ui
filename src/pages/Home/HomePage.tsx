@@ -6,7 +6,7 @@ import Hero from "./../../components/Hero/Hero";
 import { Product } from "./../../types/Product";
 
 function HomePage() {
-  const { isPending, error, data } = useQuery({
+  const { isPending, data } = useQuery({
     queryKey: ["products"],
     queryFn: fetchProducts
   });
