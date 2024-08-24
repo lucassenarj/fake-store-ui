@@ -8,8 +8,8 @@ const menuItens: MenuItem[] = [
   },
   {
     name: "Electronics",
-    slug: "eletronics",
-    path: "eletronics"
+    slug: "electronics",
+    path: "electronics"
   },
   {
     name: "Jewelery",

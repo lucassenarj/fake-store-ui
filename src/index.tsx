@@ -4,6 +4,7 @@ import './assets/index.css';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Layout from "./components/Layout/Layout";
+import CategoryPage from './pages/Category/CategoryPage';
 import HomePage from "./pages/Home/HomePage";
 import ProductPage from "./pages/Product/ProductPage";
 import reportWebVitals from './reportWebVitals';
@@ -27,7 +28,7 @@ root.render(
           <Route element={<Layout />}>
             <Route path="/" element={<HomePage />} />
             <Route path="/product/:id" element={<ProductPage />} />
-            <Route path="/:category" element={<ProductPage />} />
+            <Route path="/:category" element={<CategoryPage />} />
           </Route>
         </Routes>
       </QueryClientProvider>
